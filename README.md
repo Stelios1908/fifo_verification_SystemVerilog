@@ -1,4 +1,4 @@
-# fifo_verification_SystemVerilog
+# Fifo_verification_SystemVerilog
 
 A fifo was checked and we have 100% fifo coverage
 
