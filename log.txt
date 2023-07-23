@@ -1,0 +1,357 @@
+
+Warning-[LINX_KRNL] Unsupported Linux kernel
+  Linux kernel '3.13.0-71-generic' is not supported.
+  Supported versions are 2.4* or 2.6*.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all+dmptf -debug_region+cell+encrypt' instead.
+
+                         Chronologic VCS (TM)
+            Version S-2021.09 -- Thu Jul  6 11:15:43 2023
+
+                    Copyright (c) 1991 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all -debug_region+cell+encrypt' instead.
+
+Parsing design file 'testbench.sv'
+Parsing included file 'design.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'fifo_property.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'fifo_test.sv'.
+Parsing included file 'fifo_if.sv'.
+Back to file 'fifo_test.sv'.
+Parsing included file 'env_cls.svh'.
+Parsing included file 'gen_cls.svh'.
+Parsing included file 'dat_cls.svh'.
+Back to file 'gen_cls.svh'.
+Back to file 'env_cls.svh'.
+Parsing included file 'drv_cls.svh'.
+Back to file 'env_cls.svh'.
+Parsing included file 'dat_cls.svh'.
+Back to file 'env_cls.svh'.
+Parsing included file 'monitor_cls.svh'.
+Parsing included file 'dat_cls.svh'.
+Back to file 'monitor_cls.svh'.
+Parsing included file 'drv_cls.svh'.
+Back to file 'monitor_cls.svh'.
+Parsing included file 'fifo_if.sv'.
+Back to file 'monitor_cls.svh'.
+Parsing included file 'packet_cls.svh'.
+Back to file 'monitor_cls.svh'.
+Back to file 'env_cls.svh'.
+Parsing included file 'score_cls.svh'.
+Parsing included file 'dat_cls.svh'.
+Back to file 'score_cls.svh'.
+Parsing included file 'drv_cls.svh'.
+Back to file 'score_cls.svh'.
+Parsing included file 'packet_cls.svh'.
+Back to file 'score_cls.svh'.
+Back to file 'env_cls.svh'.
+Back to file 'fifo_test.sv'.
+Parsing included file 'gen_cls.svh'.
+Back to file 'fifo_test.sv'.
+Parsing included file 'drv_cls.svh'.
+Back to file 'fifo_test.sv'.
+Parsing included file 'monitor_cls.svh'.
+Back to file 'fifo_test.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'fifo_if.sv'.
+Back to file 'testbench.sv'.
+Top Level Modules:
+       fifo_tb
+TimeScale is 1 ns / 1 ps
+
+Warning-[SV-NFIVC] Non-void Function Used In Void Context
+gen_cls.svh, 36
+$unit, "rngdat.show"
+  The non-void function 
+  '_vcs_unit__947908375_dat_cls_7821792521382294244_7::show' is used as a void
+  function. Hence the value returned by the function will be ignored.
+  Please cast the function call with void in case the value returned by the 
+  function is not needed.
+
+
+Warning-[SV-NFIVC] Non-void Function Used In Void Context
+drv_cls.svh, 81
+$unit, "data_pkt.show"
+  The non-void function 
+  '_vcs_unit__947908375_dat_cls_7821792521382294244_7::show' is used as a void
+  function. Hence the value returned by the function will be ignored.
+  Please cast the function call with void in case the value returned by the 
+  function is not needed.
+
+VCS Coverage Metrics Release S-2021.09 Copyright (c) 1991-2021 by Synopsys Inc.
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+5 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling module fifo
+recompiling module clkrstn_if
+recompiling module fifo_if
+recompiling module fifo_tb
+All of 5 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -m32 -m32 -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/apps/vcsmx/vcs/S-2021.09/linux/lib -L/apps/vcsmx/vcs/S-2021.09/linux/lib  -Wl,-rpath-link=./ -Wl,--no-as-needed   objs/amcQw_d.o   _419_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -lreader_common /apps/vcsmx/vcs/S-2021.09/linux/lib/libBA.a -luclinative /apps/vcsmx/vcs/S-2021.09/linux/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /apps/vcsmx/vcs/S-2021.09/linux/lib/vcs_save_restore_new.o /apps/vcsmx/vcs/S-2021.09/linux/lib/ctype-stubs_32.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Chronologic VCS simulator copyright 1991-2021
+Contains Synopsys proprietary information.
+Compiler version S-2021.09; Runtime version S-2021.09;  Jul  6 11:15 2023
+
+ VCS Coverage Metrics Release S-2021.09 Copyright (c) 1991-2021 by Synopsys Inc.
+Info: "fifo_test.sv", 28: fifo_tb.oop_tb: at time 0 ps
+[info] Fifo test started
+[gen]: 0x1e, delay: 3, iter: 5
+[gen]: 0xeb, delay: 4, iter: 2
+[gen]: 0x4e, delay: 7, iter: 5
+[gen]: 0x0e, delay: 6, iter: 3
+[gen]: 0x76, delay: 2, iter: 2
+[gen]: 0xec, delay: 7, iter: 3
+[gen]: 0xc7, delay: 7, iter: 5
+[gen]: 0x13, delay: 1, iter: 3
+[gen]: 0x68, delay: 8, iter: 5
+[gen]: 0x1f, delay: 3, iter: 4
+[gen]: 0xf8, delay: 1, iter: 4
+[gen]: 0x01, delay: 7, iter: 4
+[gen]: 0x1c, delay: 6, iter: 5
+[gen]: 0xfd, delay: 2, iter: 3
+[gen]: 0x5f, delay: 4, iter: 4
+[gen]: 0x1a, delay: 3, iter: 2
+[gen]: 0x91, delay: 4, iter: 2
+[gen]: 0x05, delay: 4, iter: 4
+[gen]: 0xff, delay: 2, iter: 2
+[gen]: 0xf5, delay: 1, iter: 2
+[gen]: 0xed, delay: 5, iter: 2
+[gen]: 0xf8, delay: 1, iter: 4
+[gen]: 0x61, delay: 4, iter: 3
+[gen]: 0xbf, delay: 5, iter: 5
+[gen]: 0x95, delay: 6, iter: 2
+[gen]: 0x7e, delay: 4, iter: 3
+[gen]: 0x6f, delay: 5, iter: 4
+[gen]: 0x1e, delay: 8, iter: 2
+[gen]: 0xec, delay: 8, iter: 4
+[gen]: 0xb6, delay: 1, iter: 2
+[gen]: 0xbe, delay: 8, iter: 2
+[gen]: 0x82, delay: 1, iter: 5
+[gen]: 0xc1, delay: 7, iter: 5
+[gen]: 0x63, delay: 4, iter: 4
+[gen]: 0x5c, delay: 1, iter: 5
+[gen]: 0x7e, delay: 1, iter: 5
+[gen]: 0xae, delay: 5, iter: 2
+[gen]: 0xaa, delay: 1, iter: 4
+[gen]: 0x20, delay: 6, iter: 2
+[gen]: 0x45, delay: 2, iter: 5
+[DRV]: 0x1e, delay: 3, iter: 5
+[MONITOR] WRITE TO  FIFO: Data: 0x1e | READ: 0 | WRITE: 1 | EMPTY: 1 | FULL: 0 
+[DRV]: 0xeb, delay: 4, iter: 2
+[MONITOR] WRITE TO  FIFO: Data: 0xeb | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x4e, delay: 7, iter: 5
+[MONITOR] WRITE TO  FIFO: Data: 0x4e | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x0e, delay: 6, iter: 3
+[MONITOR] WRITE TO  FIFO: Data: 0x0e | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x76, delay: 2, iter: 2
+[MONITOR] WRITE TO  FIFO: Data: 0x76 | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xec, delay: 7, iter: 3
+[MONITOR] WRITE TO  FIFO: Data: 0xec | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xc7, delay: 7, iter: 5
+[MONITOR] WRITE TO  FIFO: Data: 0xc7 | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x13, delay: 1, iter: 3
+[MONITOR] WRITE TO  FIFO: Data: 0x13 | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x68, delay: 8, iter: 5
+=====================================================
+"fifo_property.sv", 112: fifo_tb.duv.duv_bind.check_write_on_fifofull: started at 115000ps failed at 115000ps
+	Offending '(!fifo_write)'
+Warning: "fifo_property.sv", 112: fifo_tb.duv.duv_bind.check_write_on_fifofull: at time 115000 ps
+       115[WARNING]: (check 6) write_on_fifofullr
+[MONITOR] READ FROM FIFO: Data: 0x1e | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 1 
+=====================================================
+[DRV]: pop data: 0x1e
+[MONITOR] READ FROM FIFO: Data: 0xeb | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0xeb
+[MONITOR] READ FROM FIFO: Data: 0x4e | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0x4e
+[MONITOR] READ FROM FIFO: Data: 0x0e | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0xe
+[MONITOR] READ FROM FIFO: Data: 0x76 | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0x76
+[MONITOR] READ FROM FIFO: Data: 0xec | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0xec
+[MONITOR] READ FROM FIFO: Data: 0xc7 | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0xc7
+[MONITOR] READ FROM FIFO: Data: 0x13 | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0x13
+"fifo_property.sv", 126: fifo_tb.duv.duv_bind.check_read_on_fifoempty: started at 205000ps failed at 205000ps
+	Offending '(!fifo_read)'
+Warning: "fifo_property.sv", 126: fifo_tb.duv.duv_bind.check_read_on_fifoempty: at time 205000 ps
+       205[WARNING]: (check 7) read_on_fifoempty
+[DRV]: 0x1f, delay: 3, iter: 4
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x1f | READ: 1 | WRITE: 1 | EMPTY: 1 | FULL: 0 
+[DRV]: 0xf8, delay: 1, iter: 4
+111111111111111111111
+"fifo_property.sv", 126: fifo_tb.duv.duv_bind.check_read_on_fifoempty: started at 225000ps failed at 225000ps
+	Offending '(!fifo_read)'
+Warning: "fifo_property.sv", 126: fifo_tb.duv.duv_bind.check_read_on_fifoempty: at time 225000 ps
+       225[WARNING]: (check 7) read_on_fifoempty
+[MONITOR] WRITE TO  FIFO: Data: 0xf8 | READ: 0 | WRITE: 1 | EMPTY: 1 | FULL: 0 
+[DRV]: 0x01, delay: 7, iter: 4
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x01 | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0x1f | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x1c, delay: 6, iter: 5
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x1c | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xfd, delay: 2, iter: 3
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0xfd | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0xf8 | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x5f, delay: 4, iter: 4
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x5f | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x1a, delay: 3, iter: 2
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x1a | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0x01 | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x91, delay: 4, iter: 2
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x91 | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x05, delay: 4, iter: 4
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x05 | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0x1c | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xff, delay: 2, iter: 2
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0xff | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xf5, delay: 1, iter: 2
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0xf5 | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0xfd | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xed, delay: 5, iter: 2
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0xed | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xf8, delay: 1, iter: 4
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0xf8 | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0x5f | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x61, delay: 4, iter: 3
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x61 | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xbf, delay: 5, iter: 5
+111111111111111111111
+[MONITOR] READ FROM FIFO: Data: 0x1a | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 1 
+=====================================================
+[DRV]: pop data: 0x1a
+"fifo_property.sv", 112: fifo_tb.duv.duv_bind.check_write_on_fifofull: started at 365000ps failed at 365000ps
+	Offending '(!fifo_write)'
+Warning: "fifo_property.sv", 112: fifo_tb.duv.duv_bind.check_write_on_fifofull: at time 365000 ps
+       365[WARNING]: (check 6) write_on_fifofullr
+[MONITOR] READ FROM FIFO: Data: 0x91 | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 1 
+=====================================================
+[DRV]: pop data: 0x91
+[MONITOR] READ FROM FIFO: Data: 0x05 | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0x5
+[MONITOR] READ FROM FIFO: Data: 0xff | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0xff
+[MONITOR] READ FROM FIFO: Data: 0xf5 | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0xf5
+[MONITOR] READ FROM FIFO: Data: 0xed | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0xed
+[MONITOR] READ FROM FIFO: Data: 0xf8 | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0xf8
+[MONITOR] READ FROM FIFO: Data: 0x61 | READ: 1 | WRITE: 0 | EMPTY: 0 | FULL: 0 
+[DRV]: pop data: 0x61
+"fifo_property.sv", 126: fifo_tb.duv.duv_bind.check_read_on_fifoempty: started at 445000ps failed at 445000ps
+	Offending '(!fifo_read)'
+Warning: "fifo_property.sv", 126: fifo_tb.duv.duv_bind.check_read_on_fifoempty: at time 445000 ps
+       445[WARNING]: (check 7) read_on_fifoempty
+[DRV]: 0x95, delay: 6, iter: 2
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x95 | READ: 1 | WRITE: 1 | EMPTY: 1 | FULL: 0 
+[DRV]: 0x7e, delay: 4, iter: 3
+111111111111111111111
+"fifo_property.sv", 126: fifo_tb.duv.duv_bind.check_read_on_fifoempty: started at 465000ps failed at 465000ps
+	Offending '(!fifo_read)'
+Warning: "fifo_property.sv", 126: fifo_tb.duv.duv_bind.check_read_on_fifoempty: at time 465000 ps
+       465[WARNING]: (check 7) read_on_fifoempty
+[MONITOR] WRITE TO  FIFO: Data: 0x7e | READ: 0 | WRITE: 1 | EMPTY: 1 | FULL: 0 
+[DRV]: 0x6f, delay: 5, iter: 4
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x6f | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0x95 | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x1e, delay: 8, iter: 2
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x1e | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xec, delay: 8, iter: 4
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0xec | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0x7e | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xb6, delay: 1, iter: 2
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0xb6 | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xbe, delay: 8, iter: 2
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0xbe | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0x6f | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x82, delay: 1, iter: 5
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x82 | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xc1, delay: 7, iter: 5
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0xc1 | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0x1e | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x63, delay: 4, iter: 4
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x63 | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x5c, delay: 1, iter: 5
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x5c | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0xec | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0x7e, delay: 1, iter: 5
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0x7e | READ: 0 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xae, delay: 5, iter: 2
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0xae | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[MONITOR] READ FROM FIFO: Data: 0xb6 | READ: 1 | WRITE: 1 | EMPTY: 0 | FULL: 0 
+[DRV]: 0xaa, delay: 1, iter: 4
+111111111111111111111
+[MONITOR] WRITE TO  FIFO: Data: 0xaa | READ: 0 | WRITE: 1 | EMPTY: 1 | FULL: 0 
+
+[SCOREBOARD]:FINAL RESULT : S U C C E S S !!!!!!!!!!!!!
+
+Info: "fifo_test.sv", 54: fifo_tb.oop_tb: at time 10005000 ps
+[info] Fifo test ended
+$finish called from file "fifo_test.sv", line 56.
+$finish at simulation time             10005000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 10005000 ps
+CPU Time:      0.380 seconds;       Data structure size:   0.0Mb
+Thu Jul  6 11:15:44 2023
+CPU time: .330 seconds to compile + .276 seconds to elab + .162 seconds to link + .436 seconds in simulation
